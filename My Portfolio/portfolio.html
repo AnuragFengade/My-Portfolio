@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .navbar {
+            background: #000;
+        }
+
+        .navbar a {
+            color: #fff !important;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to right, #0d6efd, #6610f2);
+            color: white;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section-title {
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .progress {
+            height: 10px;
+        }
+
+        .project-card {
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #000;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand text-white" href="#">My Portfolio</a>
+        <button class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#menu">
+            ☰
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container text-center">
+
+        <!-- Profile Image -->
+        <img src="anurag.jpg.png" class="rounded-circle mb-3" width="150" height="150" alt="Profile">
+
+        <h1>Hello, I'm <span class="text-warning">Anurag Ganesh Fengade</span></h1>
+        <p class="lead">Java Full Stack Developer | Data Analyst | Freelancer</p>
+
+        <a href="#projects" class="btn btn-light mt-3">View My Work</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="container py-5">
+    <h2 class="text-center section-title">About Me</h2>
+    <p class="text-center">
+        I am a motivated and detail-oriented developer with experience in building web-based applications such as Pharmacy and Hospital Management Systems. I have a strong foundation in frontend and backend technologies and a keen interest in developing scalable, user-centric solutions. I am committed to continuous learning and contributing effectively to dynamic development teams.
+    </p>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Skills</h2>
+        <p>Java</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width: 95%"></div>
+        </div>
+
+        <p>HTML</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-primary" style="width: 90%"></div>
+        </div>
+
+        <p>CSS</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-success" style="width: 85%"></div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="progress mb-3">
+            <div class="progress-bar bg-warning" style="width: 80%"></div>
+        </div>
+
+        <p>Bootstrap</p>
+        <div class="progress">
+            <div class="progress-bar bg-danger" style="width: 85%"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="container py-5">
+    <h2 class="text-center section-title">Projects</h2>
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5>Pharmacy Management System 1</h5>
+                    <p>Pharmacy Management System is a web-based application that automates medicine inventory, billing, and customer management. It helps track stock levels, manage sales, and generate invoices efficiently, reducing manual work and improving accuracy..</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5> Hospital Management System 2</h5>
+                    <p>Hospital Management System is a web-based application designed to manage patient records, appointments, billing, and staff information efficiently. It streamlines hospital operations, improves data organization, and enhances overall patient care through a centralized system.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card project-card">
+                <div class="card-body">
+                    <h5> Zomato Business Analysis Project 3</h5>
+                    <p> Zomato Business Analysis is an interactive analytics project built using Power BI and real-world Zomato restaurant data. The dashboard and accompanying reports offer clear visualizations of key insights into restaurant trends, customer preferences, and operational performance. It's designed for restaurateurs, food industry analysts, and decision-makers to quickly grasp complex food delivery and dining data.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Contact Me</h2>
+        <form onsubmit="return submitForm()">
+            <input class="form-control mb-3" type="text" placeholder="Your Name" required>
+            <input class="form-control mb-3" type="email" placeholder="Your Email" required>
+            <textarea class="form-control mb-3" placeholder="Message" required></textarea>
+            <button class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- Footer -->
+  <footer class="text-center bg-dark text-white">
+    
+    <div class="mb-3">
+        <a href="https://www.linkedin.com/in/anurag-fengade-910620255/" target="_blank" class="mx-2 text-white">
+            <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+
+        <a href="https://github.com/AnuragFengade" target="_blank" class="mx-2 text-white">
+            <i class="fab fa-github fa-2x"></i>
+        </a>
+
+        <a href="https://www.instagram.com/anuraggfengade23" target="_blank" class="mx-2 text-white">
+            <i class="fab fa-instagram fa-2x"></i>
+        </a>
+    </div>
+
+    <p>© 2026 Anurag Ganesh Fengade | All Rights Reserved</p>
+</footer>
+<!-- JS -->
+<script>
+    function submitForm() {
+        alert("Message Sent Successfully!");
+        return false;
+    }
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
