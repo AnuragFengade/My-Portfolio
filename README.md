@@ -57,7 +57,9 @@ Add blog section
 Deploy with custom domain
 
 👨‍💻 Author
+
 Anurag Ganesh Fengade
+
 Java Full Stack Developer | Data Analyst
 Passionate about building scalable applications
 - 💻 [GitHub]( https://github.com/AnuragFengade)
